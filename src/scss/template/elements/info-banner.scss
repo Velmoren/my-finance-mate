@@ -1,0 +1,90 @@
+.info-banner {
+    border-radius: 30px;
+    padding: 50px;
+    min-height: 520px;
+    height: 100%;
+
+    &.--bg-gray-light {
+        background-color: $bg-gray-light;
+    }
+
+    &.--bg-celestial {
+        background-color: $bg-celestial;
+    }
+
+    &.--bg-celestial-dark {
+        background-color: $bg-celestial-dark;
+    }
+
+    &.--image-1 {
+        background-image: url('/images/info/image-bg-2.png');
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 570px;
+    }
+
+    &.--image-2 {
+        background-image: url('/images/info/image-bg-3.png');
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 570px;
+    }
+
+    &.--image-3 {
+        background-image: url('/images/info/image-bg-4.png');
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 570px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    @media (max-width: 1320px) {
+        min-height: 420px;
+
+        &.--image-1 {
+            background-size: 420px;
+        }
+
+        &.--image-2 {
+            background-size: 420px;
+        }
+
+        &.--image-3 {
+            background-size: 420px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        padding: 50px 50px 380px 50px;
+        min-height: auto;
+
+        &.--image-2 {
+            background-position: center bottom;
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding: 30px 30px 380px 30px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 20px 20px 330px 20px;
+        min-height: auto;
+
+        &.--image-1 {
+            background-size: 330px;
+        }
+        &.--image-2 {
+            background-size: 330px;
+        }
+        &.--image-3 {
+            background-size: 330px;
+        }
+    }
+}

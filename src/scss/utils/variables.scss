@@ -14,6 +14,7 @@ $green: #0FD05E;
 $bg-white: $white;
 $bg-gray-light: $gray-light; 
 $bg-celestial: #E0ECF8;
+$bg-celestial-dark: #BCD7F2;
 
 $enable-shadows: true;
 $prefix: "mate-";
@@ -65,5 +66,6 @@ $gutters: (
   5: $spacer * 3,
   20px: 20px,
   30px: 30px,
+  50px: 50px,
   60px: 60px
 );

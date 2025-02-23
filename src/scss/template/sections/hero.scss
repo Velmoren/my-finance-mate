@@ -1,18 +1,18 @@
 .hero {
     padding-top: 0;
     padding-bottom: 0;
-    min-height: 620px;
     margin-bottom: 80px;
 
     .title-hero-group {
-        padding-top: 120px;
+        padding-top: 100px;
+        padding-bottom: 200px;
     }
 
-    &.mission-hero {
-        background-image: url('/images/hero/hero-bg-img-1.png'), url('/images/hero/hero-bg-1.png');
-        background-repeat: no-repeat, no-repeat;
-        background-size: 750px, cover;
-        background-position: calc(50% + 300px) bottom, center bottom;
+    &.about-hero {
+        background-image: url('/images/hero/hero-about-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
     }
 
     @media (max-width: 1320px) {
@@ -20,13 +20,6 @@
 
         .title-hero-group {
             padding-top: 75px;
-        }
-
-        &.mission-hero {
-            background-image: url('/images/hero/hero-bg-img-1.png'), url('/images/hero/hero-bg-1.png');
-            background-repeat: no-repeat, no-repeat;
-            background-size: 500px, cover;
-            background-position: calc(50% + 300px) bottom, center bottom;
         }
     }
 
@@ -37,11 +30,11 @@
             padding-top: 50px;
         }
 
-        &.mission-hero {
-            background-image: url('/images/hero/hero-bg-img-1.png'), url('/images/hero/hero-bg-1-tablet.png');
-            background-repeat: no-repeat, no-repeat;
-            background-size: 500px, cover;
-            background-position: 50% bottom, center bottom;
+        &.about-hero {
+            background-image: url('/images/hero/hero-about-bg-tablet.png');
+            background-repeat: no-repeat;
+            background-size: 970px;
+            background-position: center bottom;
         }
     }
 
@@ -51,13 +44,6 @@
 
         .title-hero-group {
             padding-top: 50px;
-        }
-
-        &.mission-hero {
-            background-image: url('/images/hero/hero-bg-img-1.png'), url('/images/hero/hero-bg-1-mobile.png');
-            background-repeat: no-repeat, no-repeat;
-            background-size: 450px, cover;
-            background-position: 50% bottom, center bottom;
         }
     }
 
@@ -69,11 +55,11 @@
             padding-top: 50px;
         }
 
-        &.mission-hero {
-            background-image: url('/images/hero/hero-bg-img-1.png'), url('/images/hero/hero-bg-1-mobile.png');
-            background-repeat: no-repeat, no-repeat;
-            background-size: 330px, cover;
-            background-position: 50% bottom, center bottom;
+        &.about-hero {
+            background-image: url('/images/hero/hero-about-bg-mobile.png');
+            background-repeat: no-repeat;
+            background-size: 470px;
+            background-position: center bottom;
         }
     }
 
