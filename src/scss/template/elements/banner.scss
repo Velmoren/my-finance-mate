@@ -1,0 +1,52 @@
+.banner {
+    &-box {
+        padding: 60px;
+        border-radius: 30px;
+        position: relative;
+
+        &__image {
+            position: absolute;
+            width: 470px;
+            right: 0;
+            bottom: 0;
+        }
+
+        &.--blue {
+            background-color: $celestial;
+        }
+
+        @media (max-width: 1320px) {
+            &__image {
+                width: 370px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            &__image {
+                width: 220px;
+            }
+        } 
+
+        @media (max-width: 768px) {
+            padding: 30px;
+
+            &__image {
+                width: 160px;
+            }
+        } 
+
+        @media (max-width: 480px) {
+            padding: 30px 20px 30px 20px;
+
+            &__image {
+                width: 120px;
+            }
+        } 
+
+        @media (max-width: 360px) {
+            &__image {
+                display: none;
+            }
+        } 
+    }
+}

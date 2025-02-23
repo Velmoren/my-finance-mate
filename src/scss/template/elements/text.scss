@@ -1,0 +1,49 @@
+.text {
+    &--lg {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    &--md {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    &--sm {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    &--extra-sm {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    @media (max-width: 1320px) {
+        &--lg {
+            font-size: 18px;
+        }
+
+        &--sm {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 576px) {
+
+    }
+
+    @media (max-width: 480px) {
+        &--md {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 360px) {
+
+    }
+}

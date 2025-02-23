@@ -1,9 +1,9 @@
 * {
-    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-family: 'Onest', sans-serif;
 }
 
 body {
-    background-color: $text-white;
+    background-color: $bg-white;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,27 +21,87 @@ main {
     flex-grow: 1;
 }
 
-.section {
-    padding-top: 90px;
-    padding-bottom: 90px;
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 20px;
+    border-radius: 30px;
 
-    @media (max-width: 480px) {
-        padding-top: 75px;
-        padding-bottom: 75px;
+    @media (max-width: 991px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
 
-    @media (max-width: 360px) {
+    @media (max-width: 768px) {
         padding-top: 50px;
         padding-bottom: 50px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @media (max-width: 480px) {}
+}
+
+.color {
+    &--black {
+        color: $black;
+    }
+
+    &--white {
+        color: $white;
+    }
+
+    &--gray-light {
+        color: $gray-light;
+    }
+
+    &--gray {
+        color: $gray;
+    }
+
+    &--gray-dark {
+        color: $gray-dark;
+    }
+
+    &--divider {
+        color: $divider;
+    }
+
+    &--gradient {
+        background: linear-gradient(180deg, #E0ECF8 0%, #FFFFFF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &--gradient-blue {
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 }
 
-.--bg-dark-blue {
-    background: $text-dark-blue;
+.bg {
+    &--black-dark {
+        background-color: $black-dark;
+    }
+
+    &--gray-light {
+        background-color: $bg-gray-light
+    }
+
+    &--celestial {
+        background-color: $bg-celestial;
+    }
 }
-.--bg-light-blue {
-    background: $text-light-blue;
-}
-.--bg-black {
-    background: $text-black;
-}
+
+@media (max-width: 1320px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 360px) {}

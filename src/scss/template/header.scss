@@ -1,5 +1,5 @@
 .header {
-    min-height: 89px;
+    min-height: 100px;
 
     &-box {
         display: flex;
@@ -20,35 +20,34 @@
     .navbar {
         padding: 24px 0;
     }
-    
+
     .navbar-brand {
         padding: 0;
         height: 41px;
     }
 
+    .navbar-toggler-container {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
     .navbar-toggler {
-        background-color: $text-white;
+        background-color: $white;
         width: 48px;
         height: 48px;
-        border-radius: 15px;
+        border-radius: 50%;
         align-items: flex-end;
         justify-content: center;
         flex-direction: column;
-        gap: 5px;
+        gap: 4px;
         box-shadow: none;
 
         span {
-            height: 2px;
-            background-color: $secondary;
-            border-radius: 2px;
-        }
-
-        span:nth-child(1), span:nth-child(3) {
             width: 22px;
-        }
-
-        span:nth-child(2) {
-            width: 15px;
+            height: 2px;
+            background-color: $black;
+            border-radius: 1px;
         }
 
         @media (max-width: 990px) {
@@ -63,35 +62,35 @@
                 font-size: 14px;
                 line-height: 140%;
                 font-weight: 550;
-                color: $text-white;
+                color: $white;
                 padding: 10px 15px;
 
                 &.active {
-                    color: $secondary-hovered;
+                    // color: $secondary-hovered;
                 }
 
                 &:hover {
-                    color: $secondary-hovered;
+                    // color: $secondary-hovered;
                 }
             }
 
             .dropdown-menu {
-                background-color: $text-white;
+                background-color: $white;
 
                 .dropdown-item {
                     font-size: 16px;
                     line-height: 22px;
                     font-weight: 500;
-                    color: $secondary;
+                    // color: $secondary;
 
                     &.active {
-                        background-color: $text-white;
-                        color: $secondary-hovered;
+                        background-color: $white;
+                        // color: $secondary-hovered;
                     }
-    
+
                     &:hover {
-                        background-color: $text-white;
-                        color: $secondary-hovered;
+                        background-color: $white;
+                        // color: $secondary-hovered;
                     }
 
                     &:focus-visible {
@@ -100,5 +99,13 @@
                 }
             }
         }
+    }
+
+    @media (max-width: 991px) {
+        min-height: 110px;
+    }
+
+    @media (max-width: 480px) {
+        min-height: 90px;
     }
 }

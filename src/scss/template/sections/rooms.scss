@@ -1,0 +1,99 @@
+.rooms {
+    &__list {
+        display: flex;
+        align-items: self-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 20px;
+
+        &--item {
+            width: calc((100% - (3 * 20px)) / 4);
+
+            img {
+                width: 100%;
+            }
+            
+            &.--item-1 {
+                margin-top: 40px;
+            }
+            &.--item-2 {
+                margin-top: 70px;
+            }
+            &.--item-3 {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        &__list {
+            &--item {
+                width: calc((100% - (1 * 20px)) / 2);
+
+                &.--item-1 {
+                    margin-top: 0;
+                    order: 1;
+                }
+                &.--item-2 {
+                    margin-top: 60px;
+                    order: 2;
+                }
+                &.--item-3 {
+                    margin-top: 0;
+                    order: 4;
+                }
+                &.--item-4 {
+                    margin-top: -50px;
+                    order: 3;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__list {
+            &--item {
+                width: calc((100% - (1 * 20px)) / 2);
+
+                &.--item-1 {
+                    margin-top: 0;
+                    order: 1;
+                }
+                &.--item-2 {
+                    margin-top: 20px;
+                    order: 2;
+                }
+                &.--item-3 {
+                    margin-top: 0;
+                    order: 4;
+                }
+                &.--item-4 {
+                    margin-top: -20px;
+                    order: 3;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 360px) {
+        &__list {
+            &--item {
+                width: 100%;
+
+                &.--item-1 {
+                    margin-top: 0;
+                }
+                &.--item-2 {
+                    margin-top: 0;
+                }
+                &.--item-3 {
+                    margin-top: 0;
+                }
+                &.--item-4 {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

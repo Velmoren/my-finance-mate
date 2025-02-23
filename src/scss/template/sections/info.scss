@@ -1,0 +1,48 @@
+.info {
+    &__banner {
+        padding-top: 185px;
+        padding-bottom: 185px;
+        background-image: url('/images/info/image-bg-1.png');
+        background-repeat: no-repeat;
+        background-position: calc(50% + 280px) center;
+        background-size: contain;
+    }
+
+    @media (max-width: 1320px) {
+        &__banner {
+            padding-top: 110px;
+            padding-bottom: 110px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &__banner {
+            padding-top: 110px;
+            padding-bottom: 300px;
+            background-position: bottom right;
+            background-size: 480px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__banner {
+            padding-top: 70px;
+            padding-bottom: 330px;
+            background-position: bottom right;
+            background-size: 450px;
+        }
+    }
+
+    @media (max-width: 576px) {}
+
+    @media (max-width: 480px) {
+        &__banner {
+            padding-top: 50px;
+            padding-bottom: 250px;
+            background-position: bottom right;
+            background-size: 330px;
+        }
+    }
+
+    @media (max-width: 360px) {}
+}

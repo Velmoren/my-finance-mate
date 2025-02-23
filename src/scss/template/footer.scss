@@ -1,12 +1,18 @@
 .footer {
     padding-top: 100px;
     padding-bottom: 25px;
-    border-top: 1px solid rgb(219, 232, 238);
-    background-color: $text-white;
+    background-color: $black;
 
     @media (max-width: 768px) {
         padding-top: 60px;
         margin-top: 60px;
+    }
+
+    hr {
+        background-color: $gray-dark;
+        border-color: $gray-dark;
+        border-width: 0;
+        height: 2px;
     }
 
     &-nav {
@@ -61,30 +67,72 @@
             flex-direction: column;
 
             &--title {
-                color: $text-gray;
-                font-size: 24px;
-                font-weight: 700;
-                line-height: 140%;
+                color: $gray;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 120%;
                 margin-bottom: 30px;
             }
 
             &--list {
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 20px;
 
                 li {
                     a {
                         text-decoration: none;
-                        color: $text-black;
+                        color: $white;
                         font-size: 16px;
-                        font-weight: 550;
-                        line-height: 130%;
+                        font-weight: 400;
+                        line-height: 140%;
                         transition: color .3s;
 
                         &:hover {
-                            color: $primary-hovered;
+                            color: $green;
                         }
+                    }
+                }
+            }
+        }
+
+        &__row-links {
+            .col {
+                a {
+                    text-decoration: none;
+                    color: $green;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 140%;
+                    transition: color .3s;
+    
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+
+            @media (min-width: 992px) {
+                display: flex;
+                justify-content: space-between;
+
+                .col {
+                    width: auto;
+                }
+            }
+
+            @media (max-width: 1320px) {
+                .col {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            @media (max-width: 991px) {
+                .col {
+                    a {
+                        font-size: 14px;
                     }
                 }
             }
@@ -127,15 +175,11 @@
     &-copyright {
         &--title {
             margin-top: 25px;
-            color: $text-gray;
-            font-size: 18px;
-            line-height: 120%;
-            font-weight: 550;
         }
 
         &--text {
-            margin-top: 25px;
-            margin-bottom: 25px;
+            max-width: 1024px;
+            margin: 25px auto;
         }
 
         @media (max-width: 360px) {

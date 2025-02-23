@@ -1,0 +1,31 @@
+.list-check {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+
+    &__item {
+        border-radius: 10px;
+        background-color: $gray-medium;
+        padding: 10px 10px 10px 42px;
+        position: relative;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 22px;
+            height: 22px;
+            background-image: url('/images/icons/check-green.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 16px;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+    }
+}

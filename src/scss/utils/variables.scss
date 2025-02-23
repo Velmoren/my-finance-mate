@@ -1,32 +1,36 @@
 // // Variable overrides second
-$text-white: #fdfdff;
-$text-ultra-light-blue: #e8f7ff;
-$text-light-blue: #bdf3ff;
-$text-blue: #1bd6ff;
-$text-dark-blue: #3a95ef;
-$text-gray: #696e7e;
-$text-black: #344455;
+$white: #FFFFFF;
+$black: #203754;
+$black-dark: #1C222E;
+$celestial-light: #D9EEFF;
+$celestial: #2A84FE;
+$gray-light: #F5F7F9;
+$gray-medium: #E6ECF1;
+$gray: #5F7789;
+$gray-dark: #254761;
+$divider: #CFD8E1;
+$green: #0FD05E;
 
-$primary-gradient: linear-gradient(0deg, #344455 0%, #22639E 100%);
-
-$primary: $text-dark-blue;
-$primary-hovered: $text-dark-blue;
-$secondary-hovered: $text-black;
+$bg-white: $white;
+$bg-gray-light: $gray-light; 
+$bg-celestial: #E0ECF8;
 
 $enable-shadows: true;
-$prefix: "era-";
+$prefix: "mate-";
 
 $container-max-widths: (
+  xxxs: 100%,
   xxs: 100%,
   xs: 100%,
-  sm: 480px,
+  sm: 504px,
   md: 714px,
-  lg: 930px,
-  xl: 1290px
+  lg: 954px,
+  xl: 1314px
 );
 
 $grid-breakpoints: (
-  xxs: 0,
+  xxxs: 0,
+  xxs: 360px,
   xs: 480px,
   sm: 576px,
   md: 768px,
@@ -43,7 +47,14 @@ $spacers: (
   2: $spacer * .5,
   3: $spacer,
   4: $spacer * 1.5,
-  5: $spacer * 3
+  5: $spacer * 3,
+  10px: 10px,
+  15px: 15px,
+  20px: 20px,
+  30px: 30px,
+  40px: 40px,
+  50px: 50px,
+  95px: 95px
 );
 $gutters: (
   0: 0,
@@ -51,5 +62,8 @@ $gutters: (
   2: $spacer * .5,
   3: $spacer,
   4: $spacer * 1.5,
-  5: $spacer * 3
+  5: $spacer * 3,
+  20px: 20px,
+  30px: 30px,
+  60px: 60px
 );

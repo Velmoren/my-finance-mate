@@ -1,0 +1,110 @@
+.card-info-light {
+    display: flex;
+    flex-direction: column;
+    background-color: $gray-light;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+
+    &.--lg {
+        padding: 50px 30px 50px 50px;
+        min-height: 210px;
+        height: 100%;
+
+        .card-info-light__content {
+            justify-content: flex-start;
+        }
+    }
+
+    &.--sm {
+        padding: 30px;
+        min-height: 210px;
+        height: 100%;
+
+        .card-info-light__content {
+            max-width: calc((100% + 60px) - 220px);
+            justify-content: space-between;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        gap: 30px;
+    }
+
+    &.--image-1 {
+        background-image: url('/images/info/image-1.png');
+        background-position: center right;
+        background-size: 200px;
+    }
+    &.--image-2 {
+        background-image: url('/images/info/image-2.png');
+        background-position: center right;
+        background-size: 200px;
+    }
+    &.--image-3 {
+        background-image: url('/images/info/image-3.png');
+        background-position: center right;
+        background-size: 200px;
+    }
+    &.--image-4 {
+        background-image: url('/images/info/image-4.png');
+        background-position: bottom right;
+        background-size: 620px;
+    }
+
+    @media (max-width: 1320px) {
+        background-size: 160px;
+
+        &.--lg {
+            padding: 30px;
+        }
+        &.--sm {
+            .card-info-light__content {
+                max-width: calc((100% + 60px) - 165px);
+            }
+        }
+
+        &.--image-1 {
+            background-size: 160px;
+        }
+        &.--image-2 {
+            background-size: 160px;
+        }
+        &.--image-3 {
+            background-size: 160px;
+        }
+        &.--image-4 {
+            background-size: 530px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &.--lg {
+            .card-info-light__content {
+                padding-bottom: 200px;
+            }
+        }
+        &.--sm {
+            min-height: 200px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &.--image-4 {
+            background-size: 450px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &.--sm {
+            min-height: 170px;
+        }
+        &.--image-4 {
+            background-size: 450px;
+            background-position: bottom left;
+        }
+    }
+}

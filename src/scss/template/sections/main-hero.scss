@@ -1,0 +1,55 @@
+.main-hero {
+    position: relative;
+    background-image: url('/images/hero/main-hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &-box {
+        padding-top: 120px;
+        padding-bottom: 170px;
+    }
+
+    @media (max-width: 1320px) {
+        background-position: center bottom;
+        background-size: cover;
+
+        &-box {
+            padding-top: 60px;
+            padding-bottom: 160px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        background-image: url('/images/hero/main-hero-bg-mobile.png');
+        background-position: center bottom;
+        background-size: cover;
+
+        &-box {
+            padding-top: 50px;
+            padding-bottom: 550px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        background-size: cover;
+
+        &-box {
+            padding-top: 50px;
+            padding-bottom: 350px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        background-size: cover;
+
+        &-box {
+            padding-top: 60px;
+            padding-bottom: 230px;
+        }
+    }
+
+    @media (max-width: 360px) {}
+}

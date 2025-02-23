@@ -1,0 +1,83 @@
+.hero {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 620px;
+    margin-bottom: 80px;
+
+    .title-hero-group {
+        padding-top: 120px;
+    }
+
+    &.mission-hero {
+        background-image: url('/images/hero/hero-bg-img-1.png'), url('/images/hero/hero-bg-1.png');
+        background-repeat: no-repeat, no-repeat;
+        background-size: 750px, cover;
+        background-position: calc(50% + 300px) bottom, center bottom;
+    }
+
+    @media (max-width: 1320px) {
+        min-height: 530px;
+
+        .title-hero-group {
+            padding-top: 75px;
+        }
+
+        &.mission-hero {
+            background-image: url('/images/hero/hero-bg-img-1.png'), url('/images/hero/hero-bg-1.png');
+            background-repeat: no-repeat, no-repeat;
+            background-size: 500px, cover;
+            background-position: calc(50% + 300px) bottom, center bottom;
+        }
+    }
+
+    @media (max-width: 991px) {
+        min-height: 760px;
+
+        .title-hero-group {
+            padding-top: 50px;
+        }
+
+        &.mission-hero {
+            background-image: url('/images/hero/hero-bg-img-1.png'), url('/images/hero/hero-bg-1-tablet.png');
+            background-repeat: no-repeat, no-repeat;
+            background-size: 500px, cover;
+            background-position: 50% bottom, center bottom;
+        }
+    }
+
+    @media (max-width: 768px) {
+        min-height: 710px;
+        margin-bottom: 60px;
+
+        .title-hero-group {
+            padding-top: 50px;
+        }
+
+        &.mission-hero {
+            background-image: url('/images/hero/hero-bg-img-1.png'), url('/images/hero/hero-bg-1-mobile.png');
+            background-repeat: no-repeat, no-repeat;
+            background-size: 450px, cover;
+            background-position: 50% bottom, center bottom;
+        }
+    }
+
+    @media (max-width: 480px) {
+        min-height: 580px;
+        margin-bottom: 40px;
+
+        .title-hero-group {
+            padding-top: 50px;
+        }
+
+        &.mission-hero {
+            background-image: url('/images/hero/hero-bg-img-1.png'), url('/images/hero/hero-bg-1-mobile.png');
+            background-repeat: no-repeat, no-repeat;
+            background-size: 330px, cover;
+            background-position: 50% bottom, center bottom;
+        }
+    }
+
+    @media (max-width: 360px) {
+    
+    }
+}

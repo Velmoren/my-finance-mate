@@ -3,165 +3,628 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Mate" />
+  <link rel="manifest" href="/site.webmanifest" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My finance mate</title>
 </head>
 
 <body>
   <div class="page-wrapper">
-    <header class="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-          <div class="container-fluid p-0">
-            <a class="navbar-brand logo" href="/era-of-superio-dev/">
-              <img class="logo-image" src="/images/logo-header.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-              <ul class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Trade
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/era-of-superio-dev/trading.html">Trading Platforms</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/">Investments</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/">Company</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/">Contacts</a>
-                </li>
-              </ul>
+    <main>
+      <section class="main-hero">
+        <header class="header">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+              <div class="container-fluid p-0">
+                <a class="navbar-brand logo" href="/my-finance-mate/">
+                  <img class="logo-image" src="/images/logo.svg" alt="logo">
+                </a>
+                <div class="navbar-toggler-container">
+                  <a href="#" class="btn btn-red btn--sm btn-outline d-none d-xxs-block d-lg-none">Войти</a>
 
-              <div class="header-controls">
-                <button class="btn btn-info">Registration</button>
-                <button class="btn btn-outline">Log in</button>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                  <ul class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/">Торговля</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/">Платформа</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/">База знаний</a>
+                    </li>
+                  </ul>
+
+                  <div class="header-controls flex-wrap">
+                    <a href="#" class="btn btn-white btn--sm btn-outline d-block d-xxs-none d-lg-block">Войти</a>
+                    <a href="#" class="btn btn--sm">Регистрация</a>
+
+                    <div class="language-select">
+                      <ul class="language-select__list">
+                        <!-- если необходима ссылка - обернуть текст в <a>Рус</a> -->
+                        <li class="active" data-language="ru">Рус</li>
+                        <li data-language="en">Eng</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+
+        <div class="container">
+          <div class="main-hero-box">
+            <div class="row">
+              <div class="col col-12 col-md-11 col-lg-7 col-xl-6 pe-0 pe-md-30px">
+                <div class="title-hero-group">
+                  <h1 class="title title--lg text-start color--white mb-20px">
+                    Торгуйте на мировых финансовых рынках с профессионалами
+                  </h1>
+
+                  <p class="text text--md text-start color--gray-light mb-30px">
+                    Откройте новые горизонты с экспертными решениями и передовыми технологиями.
+                  </p>
+
+                  <a href="#" class="btn btn-red --responsive">Начать торговать</a>
+                </div>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
+        </div>
+      </section>
 
-    <main>
+      <section class="rooms bg--celestial">
+        <div class="container">
+          <div class="row mb-95px">
+            <div class="col col-12 col-lg-7 col-xl-8">
+              <h2 class="title title--md color--black mb-15px">
+                Откройте для себя возможности современной торговли CFD
+              </h2>
 
+              <p class="text text--sm color--gray-dark">
+                Погрузитесь в мир финансов с нашей интуитивно понятной платформой, созданной для трейдеров всех уровней.
+                Получайте доступ к широкому спектру инструментов — от акций и индексов до валют и сырьевых товаров — и
+                управляйте своими инвестициями с максимальной эффективностью.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="rooms__list">
+                <div class="rooms__list--item --item-1">
+                  <img src="/images/rooms/image-1.png" alt="rooms">
+                </div>
+
+                <div class="rooms__list--item --item-2">
+                  <img src="/images/rooms/image-2.png" alt="rooms">
+                </div>
+
+                <div class="rooms__list--item --item-3">
+                  <img src="/images/rooms/image-3.png" alt="rooms">
+                </div>
+
+                <div class="rooms__list--item --item-4  ">
+                  <img src="/images/rooms/image-4.png" alt="rooms">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-info-list">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="title title--great color--gradient mb-10px text-center">
+                Подробнее о компании
+              </h2>
+            </div>
+          </div>
+
+          <div class="row g-20px">
+            <div class="col col-12 col-md-6">
+              <div class="card-info">
+                <div class="card-info__content--image">
+                  <h4 class="title title--extra-md color--black text-center">
+                    Простота и инновации
+                  </h4>
+
+                  <img src="/images/card-info/image-bg-4.png" alt="image-bg">
+
+                  <p class="text text--sm color--gray-dark text-center">
+                    Наш интерфейс разработан так, чтобы каждая функция была доступна буквально в два клика. Торгуйте с
+                    любого устройства, следите за рыночными котировками в реальном времени и принимайте решения
+                    мгновенно — все для вашего комфорта и успеха.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-12 col-md-6">
+              <div class="card-info">
+                <div class="card-info__content--image">
+                  <h4 class="title title--extra-md color--black text-center">
+                    Надежность и безопасность
+                  </h4>
+
+                  <img src="/images/card-info/image-bg-1.png" alt="image-bg">
+
+                  <p class="text text--sm color--gray-dark text-center">
+                    Средства и личные данные находятся под надежной защитой. Мы используем современные технологии
+                    шифрования и соответствуем мировым стандартам безопасности, чтобы вы могли сосредоточиться
+                    исключительно на торговле.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-12 col-md-6">
+              <div class="card-info">
+                <div class="card-info__content--image">
+                  <h4 class="title title--extra-md color--black text-center">
+                    Экспертная аналитика и поддержка
+                  </h4>
+
+                  <img src="/images/card-info/image-bg-2.png" alt="image-bg">
+
+                  <p class="text text--sm color--gray-dark text-center">
+                    Получайте доступ к актуальным обзорам, аналитическим отчетам и образовательным материалам,
+                    разработанным командой профессионалов. Мы помогаем вам ориентироваться в сложном мире финансов,
+                    предлагая своевременные рекомендации и поддержку на каждом шагу.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-12 col-md-6">
+              <div class="card-info">
+                <div class="card-info__content--image">
+                  <h4 class="title title--extra-md color--black text-center">
+                    Широкий выбор финансовых инструментов
+                  </h4>
+
+                  <img src="/images/card-info/image-bg-3.png" alt="image-bg">
+
+                  <p class="text text--sm color--gray-dark text-center">
+                    Наша платформа предоставляет вам возможность торговать CFD на акции, индексы, валюты и сырьевые
+                    товары. Независимо от того, какие рынки вы предпочитаете, мы предлагаем инструменты, способные
+                    удовлетворить даже самые изысканные требования.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-list">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="title title--lg color--black mb-50px text-center">
+                MyFinanceMate в цифрах
+              </h2>
+            </div>
+          </div>
+
+          <div class="row g-20px">
+            <div class="col col-12 col-xxs-6 col-lg-3">
+              <div class="card --black">
+                <div class="card--icon">
+                  <img src="/images/icons/password-check.svg" alt="password-check">
+                </div>
+
+                <div class="card__content">
+                  <h5 class="title title--lg">
+                    <span class="color--white">2.9</span>
+                    <span class="color--divider">млн</span>
+                  </h5>
+
+                  <p class="text text--sm color--divider">
+                    Активные трейдеры
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-12 col-xxs-6 col-lg-3">
+              <div class="card --black">
+                <div class="card--icon">
+                  <img src="/images/icons/password-check.svg" alt="password-check">
+                </div>
+
+                <div class="card__content">
+                  <h5 class="title title--lg">
+                    <span class="color--white">Нулевые</span>
+                  </h5>
+
+                  <p class="text text--sm color--divider">
+                    отклонения ордеров и реквоты
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-12 col-xxs-6 col-lg-3">
+              <div class="card --black">
+                <div class="card--icon">
+                  <img src="/images/icons/password-check.svg" alt="password-check">
+                </div>
+
+                <div class="card__content">
+                  <h5 class="title title--lg">
+                    <span class="color--white">1500</span>
+                    <span class="color--divider">+</span>
+                  </h5>
+
+                  <p class="text text--sm color--divider">
+                    Торговых инструментов
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-12 col-xxs-6 col-lg-3">
+              <div class="row g-20px">
+                <div class="col col-12">
+                  <div class="card --divider"></div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="card --blue-small">
+
+                    <span class="card--arrow">
+                      <img src="/images/icons/arrow-right.svg" alt="arrow-right">
+                    </span>
+
+                    <div class="card__content">
+                      <h5 class="title title--extra-sm color--white">
+                        Начать торговать
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-list bg--gray-light">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="title title--lg color--black mb-50px text-center">
+                MyFinanceMate в цифрах
+              </h2>
+            </div>
+          </div>
+
+          <div class="row g-20px">
+            <div class="col col-12 col-xs-6 col-lg-3">
+              <div class="card">
+                <div class="card--icon">
+                  <img src="/images/icons/password-check.svg" alt="password-check">
+                </div>
+
+                <span class="card--index --absolute color--gradient">01</span>
+
+                <div class="card__content">
+                  <h5 class="title title--extra-sm color--black">
+                    Зарегистрируйтесь
+                  </h5>
+
+                  <p class="text text--sm color--dark-gray">
+                    Зарегистрируйте и верифицируйте счет FXOpen INT
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-12 col-xs-6 col-lg-3">
+              <div class="card">
+                <div class="card--icon">
+                  <img src="/images/icons/download.svg" alt="download">
+                </div>
+
+                <span class="card--index --absolute color--gradient">02</span>
+
+                <div class="card__content">
+                  <h5 class="title title--extra-sm color--black">
+                    Скачайте терминал
+                  </h5>
+
+                  <p class="text text--sm color--dark-gray">
+                    Откройте счет и скачивайте терминал MetaTrader 4, MetaTrader 5 или TickTrader
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-12 col-xs-6 col-lg-3">
+              <div class="card">
+                <div class="card--icon">
+                  <img src="/images/icons/money-recive.svg" alt="money-recive">
+                </div>
+
+                <span class="card--index --absolute color--gradient">03</span>
+
+                <div class="card__content">
+                  <h5 class="title title--extra-sm color--black">
+                    Пополните счет
+                  </h5>
+
+                  <p class="text text--sm color--dark-gray">
+                    Пополните счет любым удобным способом
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-12 col-xs-6 col-lg-3">
+              <div class="card --blue">
+                <div class="card--icon">
+                  <img src="/images/icons/arrange-square.svg" alt="arrange-square">
+                </div>
+
+                <span class="card--index --absolute color--gradient-blue">04</span>
+
+                <div class="card__content">
+                  <h5 class="title title--extra-sm color--white">
+                    Начнайте торговать
+                  </h5>
+
+                  <p class="text text--sm color--white">
+                    Войдите в торговый счет и начните торговать
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info info__banner bg--black-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col col-12 col-lg-7 col-xl-5">
+              <h3>
+                <span class="badge --blue --lg">Пополняйте</span>
+                <span class="title title--md color--white"> и </span>
+                <span class="badge --green --lg">выводите</span>
+                <span class="title title--extra-lg color--white">
+                  любым удобным для Вас способом
+                </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-list">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="title title--lg color--black mb-50px text-center">
+                Торгуйте с надежным брокером
+              </h2>
+            </div>
+          </div>
+
+          <div class="row g-20px">
+            <div class="col col-12 col-lg-5">
+              <div class="row g-20px">
+                <div class="col col-12 col-md-6 col-lg-12">
+                  <div class="card-info-light --sm --image-1">
+                    <div class="card-info-light__content">
+                      <h4 class="title title--sm color--black">
+                        Лучшая торговая платформа
+                      </h4>
+
+                      <span class="badge --black --sm">2023</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col-12 col-md-6 col-lg-12">
+                  <div class="card-info-light --sm --image-2">
+                    <div class="card-info-light__content">
+                      <h4 class="title title--sm color--black">
+                        Лучшая торговая платформа
+                      </h4>
+
+                      <span class="badge --black --sm">2023</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="card-info-light --sm --image-3">
+                    <div class="card-info-light__content">
+                      <h4 class="title title--sm color--black">
+                        Лучшая торговая платформа
+                      </h4>
+
+                      <span class="badge --black --sm">2023</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-lg-7">
+              <div class="card-info-light --lg --image-4">
+                <div class="card-info-light__content">
+                  <ul class="list-check">
+                    <li class="list-check__item">Более 7 лет опыта в роли ведущего Forex брокера</li>
+                    <li class="list-check__item">Более 4 миллионов счетов по всему миру</li>
+                    <li class="list-check__item">Интуитивно понятная торговая платформа</li>
+                    <li class="list-check__item">Эксклюзивное исполнение ордеров благодаря собственным технологиям</li>
+                    <li class="list-check__item">6 классов активов с более чем 1500 CFD инструментами </li>
+                  </ul>
+
+                  <a href="#" class="btn btn-red --responsive">Начать торговать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-list">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="title title--lg color--black mb-50px text-center">
+                Зарабатывайте на самых <br class="d-none d-md-block"> популярных активах
+              </h2>
+            </div>
+          </div>
+
+          <div class="row g-20px">
+            <div class="col">
+              <div class="card --divider"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="banner-box --blue">
+                <div class="row">
+                  <div class="col col-12 col-md-10 col-lg-8 col-xl-6">
+                    <h4 class="title title--md mb-20px">
+                      <span class="color--white">Откройте счет с</span>
+                      <span class="color--black">MyFinanceMate</span>
+                    </h4>
+
+                    <p class="text text--lg color--white mb-40px">
+                      Получайте доступ к более 1500 торговых активов и используйте надежную и быструю торговую систему
+                    </p>
+
+                    <a href="#" class="btn btn-white">Начать торговать</a>
+                  </div>
+                </div>
+
+                <img class="banner-box__image" src="/images/banner/image-1.png" alt="banner">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <div class="row footer-nav">
-          <div class="col col-12 col-md-6 col-lg-4">
-            <div class="footer-nav__main h-100">
-              <a class="footer-nav__logo logo" href="/">
-                <img class="logo-image" src="/images/logo-footer.png" alt="logo">
-              </a>
+        <div class="row mb-50px">
+          <div class="col">
+            <a class="footer-nav__logo logo" href="/">
+              <img class="logo-image" src="/images/logo.svg" alt="logo">
+            </a>
+          </div>
+        </div>
 
-              <div class="footer-nav__links">
-                <ul class="footer-nav__links--list">
-                  <li> <a href="tel:+7777777777777">+7 777777777777</a></li>
-                  <li><a href="mailto:support@gmail.com">support@gmail.com</a></li>
-                </ul>
-              </div>
-
-              <div class="footer-nav__bank-list">
-                <div class="footer-nav__bank-list--item">
-                  <img src="/images/footer/transfer.png" alt="transfer">
-                </div>
-                <div class="footer-nav__bank-list--item">
-                  <img src="/images/footer/visa.png" alt="visa">
-                </div>
-                <div class="footer-nav__bank-list--item">
-                  <img src="/images/footer/mastercard.png" alt="mastercard">
-                </div>
-                <div class="footer-nav__bank-list--item">
-                  <img src="/images/footer/bitcoin.png" alt="bitcoin">
-                </div>
-                <div class="footer-nav__bank-list--item">
-                  <img src="/images/footer/ethereum.png" alt="ethereum">
-                </div>
-                <div class="footer-nav__bank-list--item">
-                  <img src="/images/footer/litecoin.png" alt="litecoin">
-                </div>
-              </div>
+        <div class="row gx-20px gy-60px">
+          <div class="col col-12 col-sm-6 col-md-3">
+            <div class="footer-nav__links">
+              <h5 class="footer-nav__links--title">О компании</h5>
+              <ul class="footer-nav__links--list">
+                <li><a href="/">История компании</a></li>
+                <li><a href="/">Юридические документы</a></li>
+                <li><a href="/">Контакты</a></li>
+                <li><a href="/">Награды</a></li>
+              </ul>
             </div>
           </div>
 
-          <div class="col col-12 col-md-6 col-lg-8">
-            <div class="row footer-nav__box">
-
-              <div class="col col-6 col-md-6 col-lg-3">
-                <div class="footer-nav__links">
-                  <h5 class="footer-nav__links--title">Trade</h5>
-                  <ul class="footer-nav__links--list">
-                    <li><a href="/">Trading Platform</a></li>
-                    <li><a href="/">Account Types</a></li>
-                    <li><a href="/">Deposit & Withdrawals</a></li>
-                    <li><a href="/">Economic Calendar</a></li>
-                    <li><a href="/">Promotions</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col col-6 col-md-6 col-lg-3">
-                <div class="footer-nav__links">
-                  <h5 class="footer-nav__links--title">Documents</h5>
-                  <ul class="footer-nav__links--list">
-                    <li><a href="/">Privacy Policy</a></li>
-                    <li><a href="/">AML Policy</a></li>
-                    <li><a href="/">Risk Disclosure</a></li>
-                    <li><a href="/">User Agreement</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col col-6 col-md-6 col-lg-3">
-                <div class="footer-nav__links">
-                  <h5 class="footer-nav__links--title">Company</h5>
-                  <ul class="footer-nav__links--list">
-                    <li><a href="/">About Us</a></li>
-                    <li><a href="/">Partnership</a></li>
-                    <li><a href="/">Education</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col col-6 col-md-6 col-lg-3">
-                <div class="footer-nav__links">
-                  <h5 class="footer-nav__links--title">Investments</h5>
-                  <ul class="footer-nav__links--list">
-                    <li><a href="/">Copy Trading</a></li>
-                    <li><a href="/">PAMM Service</a></li>
-                    <li><a href="/">Investment Deposit</a></li>
-                  </ul>
-                </div>
-              </div>
-
+          <div class="col col-12 col-sm-6 col-md-3">
+            <div class="footer-nav__links">
+              <h5 class="footer-nav__links--title">Торговля</h5>
+              <ul class="footer-nav__links--list">
+                <li><a href="/">Типы счетов</a></li>
+                <li><a href="/">ESG</a></li>
+                <li><a href="/">Исламские счета</a></li>
+              </ul>
             </div>
+          </div>
+
+          <div class="col col-12 col-sm-6 col-md-3">
+            <div class="footer-nav__links">
+              <h5 class="footer-nav__links--title">Documents</h5>
+              <ul class="footer-nav__links--list"></ul>
+            </div>
+          </div>
+
+          <div class="col col-12 col-sm-6 col-md-3">
+            <div class="footer-nav__links">
+              <h5 class="footer-nav__links--title">Documents</h5>
+              <ul class="footer-nav__links--list"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-50px">
+          <div class="col">
+            <hr>
+          </div>
+        </div>
+
+        <div class="row footer-nav__row-links gy-30px">
+          <div class="col col-12 col-sm-6 col-md-4">
+            <a href="/">Политика конфиденциальности</a>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4">
+            <a href="/">Юридические документы</a>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4">
+            <a href="/">Политика AML</a>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4">
+            <a href="/">Предупреждение о рисках</a>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4">
+            <a href="/">Подать жалобу</a>
+          </div>
+        </div>
+
+        <div class="row my-50px">
+          <div class="col">
+            <hr>
           </div>
         </div>
 
         <div class="row">
           <div class="col">
-            <p class="footer-copyright--title text-center">
-              © 2024 NorthView.com All rights reserved
+            <p class="footer-copyright--text text--sm color--gray text-center">
+              Предупреждение о риске: Торговля деривативными продуктами осуществляется с использованием маржи, что
+              сопряжено с высоким уровнем риска и возможностью полной потери капитала. Эти инструменты могут не
+              подходить всем, поэтому убедитесь, что Вы полностью осведомлены о связанных рисках. Для получения
+              детальной информации, пожалуйста, изучите Заявление о раскрытии рисков. Клиентам проживающим в США, Сирии,
+              Северной Корее и Иране, доступ к нашим услугам запрещен в связи с особенностями законодательства их стран.
             </p>
 
-            <p class="footer-copyright--text text--sm text--gray text-center">
-              Risk Warning : Trading foreign exchange on margin carries a high level of risk, and may not be suitable
-              for all investors. Please ensure that you fully understand the risks involved, taking into account your
-              investments objectives and level of experience, before trading, and if necessary, seek independent advice.
+            <p class="footer-copyright--title text--sm color--gray text-center">
+              © 2025 TreeCapital.com All rights reserved
             </p>
           </div>
         </div>

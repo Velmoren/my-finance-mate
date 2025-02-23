@@ -1,29 +1,32 @@
 @font-face {
-    font-family: 'HelveticaNeueCyr';
-    src: local('HelveticaNeueCyr Regular'), local('HelveticaNeueCyr-Regular'),
-        url('/src/fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
-        url('/src/fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
-        url('/src/fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
-    font-weight: 400;
+    font-family: 'Onest';
+    src: local('Onest Regular'), local('Onest-Regular'),
+        url('/src/fonts/Onest-Regular.woff2') format('woff2'),
+        url('/src/fonts/Onest-Regular.woff') format('woff'),
+        url('/src/fonts/Onest-Regular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'HelveticaNeueCyr';
-    src: local('HelveticaNeueCyr Medium'), local('HelveticaNeueCyr-Medium'),
-        url('/src/fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
-        url('/src/fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
-        url('/src/fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
-    font-weight: 550;
+    font-family: 'Onest';
+    src: local('Onest Medium'), local('Onest-Medium'),
+        url('/src/fonts/Onest-Medium.woff2') format('woff2'),
+        url('/src/fonts/Onest-Medium.woff') format('woff'),
+        url('/src/fonts/Onest-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'HelveticaNeueCyr';
-    src: local('HelveticaNeueCyr Bold'), local('HelveticaNeueCyr-Bold'),
-        url('/src/fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
-        url('/src/fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
-        url('/src/fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
-    font-weight: 700;
+    font-family: 'Onest';
+    src: local('Onest Bold'), local('Onest-Bold'),
+        url('/src/fonts/Onest-Bold.woff2') format('woff2'),
+        url('/src/fonts/Onest-Bold.woff') format('woff'),
+        url('/src/fonts/Onest-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }

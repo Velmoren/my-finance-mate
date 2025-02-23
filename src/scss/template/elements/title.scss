@@ -1,0 +1,111 @@
+.title {
+    &--great {
+        font-size: 120px;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: -6px;
+    }
+
+    &--extra-lg {
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: -2px;
+    }
+
+    &--lg {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: -2px;
+    }
+
+    &--md {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 110%;
+    }
+
+    &--extra-md {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 110%;
+    }
+
+    &--sm {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 120%;
+    }
+
+    @media (max-width: 1320px) {    
+        &--great {
+            font-size: 85px;;
+        }
+
+        &--extra-lg {
+            font-size: 50px;
+        }
+
+        &--lg {
+            font-size: 40px;
+        }
+
+        &--md {
+            font-size: 40px;
+        }
+
+        &--extra-md {
+            font-size: 30px;
+        }
+
+        &--sm {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &--great {
+            font-size: 65px;;
+        }
+
+        &--extra-lg {
+            font-size: 40px;
+        }
+
+        &--md {
+            font-size: 36px;
+        }
+
+        &--extra-md {
+            font-size: 22px;
+        }
+
+        &--sm {
+      
+        }
+    }
+
+
+    @media (max-width: 480px) {
+        &--great {
+            font-size: 50px;;
+        }
+
+        &--extra-lg {
+            font-size: 30px;
+        }
+
+        &--lg {
+            font-size: 30px;
+        }
+
+        &--md {
+            font-size: 28px;
+        }
+
+        &--sm {
+       
+        }
+    }
+}

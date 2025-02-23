@@ -1,0 +1,169 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &__banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 160px;
+        }
+    }
+
+    &--index {
+        font-size: 50px;
+        line-height: 120%;
+        font-weight: 500;
+        color: $black;
+
+        &.--absolute {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+    }
+
+    &--icon {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &--arrow {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $white;
+    }
+
+    &--title {
+        margin-bottom: 5px;
+    }
+
+    &:not(&.--black, &.--blue, &.--blue-small, &.--divider) {
+        background-color: $white;
+        gap: 45px;
+
+        .card--icon {
+            background-color: $black;
+        }
+    }
+
+    &.--blue {
+        background-color: $celestial;
+        gap: 45px;
+
+        .card--icon {
+            background-color: $white;
+        }
+    }
+
+    &.--black {
+        background-color: $gray-dark;
+        gap: 45px;
+
+        .card--icon {
+            background-color: $celestial;
+        }
+    }
+
+    &.--blue-small {
+        background-color: $celestial;
+
+        .card__content {
+            padding-top: 20px;
+            max-width: 130px;
+        }
+    }
+
+    &.--divider {
+        background-color: $divider;
+        min-height: 140px;
+    }
+
+    @media (max-width: 1320px) {
+        padding: 20px;
+
+        &__content {
+            &__banner {
+                gap: 50px;
+            }
+        }
+
+        &--index {
+            &.--absolute {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+        }
+
+        &.--blue-small {
+            min-height: 110px;
+        }
+
+        &.--divider {
+            background-color: $divider;
+            min-height: 110px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &.--responsive {
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        &__content {
+            &__banner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 50px;
+            }
+        }
+
+        &.--blue-small {
+            min-height: 100px;
+            justify-content: center;
+
+            .card__content {
+                padding-top: 0;
+            }
+        }
+
+        &.--divider {
+            background-color: $divider;
+            min-height: 100px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 15px;
+
+        &--index {
+            &.--absolute {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+        }
+    }
+}

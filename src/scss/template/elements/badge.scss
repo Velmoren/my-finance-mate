@@ -1,0 +1,54 @@
+.badge {
+    border-radius: 10px;
+
+    &.--lg {
+        padding: 0 10px;
+        font-size: 40px;
+        line-height: 110%;
+        font-weight: 500;
+    }
+    &.--sm {
+        padding: 2px 10px;
+        border-radius: 10px;
+        font-size: 19px;
+        line-height: 140%;
+        font-weight: 500;
+    }
+
+    &.--blue {
+        display: inline-flex;
+        background-color: $celestial;
+        color: $white;
+    }
+
+    &.--green {
+        display: inline-flex;
+        background-color: $green;
+        color: $white;
+    }
+
+    &.--black {
+        display: inline-flex;
+        background-color: $black;
+        color: $white;
+    }
+
+    @media (max-width: 1320px) {    
+        &.--lg {
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &.--lg {
+            font-size: 36px;
+        }
+    }
+
+
+    @media (max-width: 480px) {
+        &.--lg {
+            font-size: 28px;
+        }
+    }
+}
