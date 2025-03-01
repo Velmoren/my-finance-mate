@@ -29,9 +29,18 @@
         }
 
         &.--sm {
+            padding-left: 22px;
+
             &::before {
-                top: 3px;
+                width: 12px;
+                height: 20px;
+                background-size: 12px;
+                top: -1px;
             } 
         }
+    }
+
+    &.--sm {
+        gap: 5px;
     }
 }

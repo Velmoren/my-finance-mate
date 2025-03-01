@@ -71,6 +71,10 @@ img {
         color: $divider;
     }
 
+    &--celestial {
+        color: $celestial;
+    }
+
     &--gradient {
         background: linear-gradient(180deg, #E0ECF8 0%, #FFFFFF 100%);
         -webkit-background-clip: text;

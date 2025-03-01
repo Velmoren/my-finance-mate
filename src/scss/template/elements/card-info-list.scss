@@ -1,0 +1,104 @@
+.card-info-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: $white;
+    border: 1px solid $divider;
+
+    &.--lg {
+        gap: 30px;
+        padding: 40px 30px;
+    }
+
+    &__wrapper {
+        background-color: $bg-gray-light;
+        border-radius: 30px;
+        padding: 15px;
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    &__rows {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &--item {
+            padding-left: 35px;
+            position: relative;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: url('/images/icons/add-circle.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+    }
+
+    &__content {
+        border-radius: 15px;
+        background-color: $bg-gray-light;
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        width: 100%;
+        height: 100%;
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 140%;  
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+
+            li {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;  
+                padding-left: 20px;
+                position: relative;
+                
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    background-image: url('/images/icons/tick-circle.svg');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        padding: 20px 15px;
+    }
+}
