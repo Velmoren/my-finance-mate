@@ -24,9 +24,48 @@
             background-size: contain;
         }
 
+        &.--bg-2 {
+            border-radius: 30px;
+            height: 460px;
+            width: 100%;
+            background-image: url('/images/info/image-bg-7.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        &.--bg-3 {
+            border-radius: 30px;
+            height: 520px;
+            width: 100%;
+            background-image: url('/images/info/image-bg-8.webp');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+        }
+
+        @media (max-width: 1320px) {
+            &.--bg-2 {
+                height: 320px;
+            }
+
+            &.--bg-3 {
+                height: 360px;
+            }
+        }
+
         @media (max-width: 991px) {
             &.--bg-1 {
                 height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            &.--bg-2 {
+                height: 200px;
+            }
+            &.--bg-3 {
+                height: 300px;
             }
         }
     }

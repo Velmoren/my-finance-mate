@@ -29,6 +29,13 @@
         background-position: center bottom;
     }
 
+    &.esg-hero {
+        background-image: url('/images/hero/hero-esg-bg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+    }
+
     @media (max-width: 1320px) {
         min-height: 530px;
 
@@ -48,21 +55,28 @@
             background-image: url('/images/hero/hero-about-bg-tablet.png');
             background-repeat: no-repeat;
             background-size: 970px;
-            background-position: center bottom;
+            background-position: center top;
         }
 
         &.honors-hero {
             background-image: url('/images/hero/hero-honors-bg-tablet.webp');
             background-repeat: no-repeat;
             background-size: 970px;
-            background-position: center bottom;
+            background-position: center top;
         }
 
         &.account-types-hero {
             background-image: url('/images/hero/hero-account-types-bg-tablet.webp');
             background-repeat: no-repeat;
             background-size: 970px;
-            background-position: center bottom;
+            background-position: center top;
+        }
+
+        &.esg-hero {
+            background-image: url('/images/hero/hero-esg-bg-tablet.webp');
+            background-repeat: no-repeat;
+            background-size: 970px;
+            background-position: center top;
         }
     }
 
@@ -87,21 +101,28 @@
             background-image: url('/images/hero/hero-about-bg-mobile.png');
             background-repeat: no-repeat;
             background-size: 470px;
-            background-position: center bottom;
+            background-position: center top;
         }
 
         &.honors-hero {
             background-image: url('/images/hero/hero-honors-bg-mobile.webp');
             background-repeat: no-repeat;
             background-size: 470px;
-            background-position: center bottom;
+            background-position: center top;
         }
 
         &.account-types-hero {
             background-image: url('/images/hero/hero-account-types-bg-mobile.webp');
             background-repeat: no-repeat;
             background-size: 470px;
-            background-position: center bottom;
+            background-position: center top;
+        }
+
+        &.esg-hero {
+            background-image: url('/images/hero/hero-esg-bg-mobile.webp');
+            background-repeat: no-repeat;
+            background-size: 470px;
+            background-position: center top;
         }
     }
 

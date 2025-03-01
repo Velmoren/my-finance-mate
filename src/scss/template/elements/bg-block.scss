@@ -1,0 +1,52 @@
+.bg-block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &.--lg {
+        padding: 40px;
+        border-radius: 30px;
+        gap: 20px;
+    }
+
+    &.--md {
+        padding: 30px;
+        border-radius: 20px;
+        gap: 15px;
+    }
+
+    &.--gray-light {
+        background-color: $bg-gray-light;
+    }
+
+    &.--celestial {
+        background-color: $bg-celestial;
+    }
+
+    &.--celestial-dark {
+        background-color: $bg-celestial-dark;
+    }
+
+    &.--bg-1 {
+        background-image: url('/images/banner/image-2.webp');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 170px;
+    }
+
+    @media (max-width: 1320px) {
+        &.--lg {
+            padding: 30px;
+        }
+    
+        &.--md {
+            padding: 20px;
+        }
+
+        &.--bg-1 {
+            background-size: 150px;  
+        }
+    }
+
+    @media (max-width: 768px) {}
+}
