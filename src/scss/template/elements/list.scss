@@ -1,0 +1,37 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    li {
+        padding-left: 30px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 22px;
+            height: 22px;
+            background-image: url('/images/icons/tick-circle.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 16px;
+            position: absolute;
+            top: calc(50% - 6px);
+            left: 0;
+        }
+
+        &.--md {
+            &::before {
+                top: 0px; 
+            } 
+        }
+
+        &.--sm {
+            &::before {
+                top: 3px;
+            } 
+        }
+    }
+}

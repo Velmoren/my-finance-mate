@@ -6,8 +6,14 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        about: resolve(__dirname, 'about.html'),
+        'main': resolve(__dirname, 'index.html'),
+        'about': resolve(__dirname, 'about.html'),
+        'honors': resolve(__dirname, 'honors.html'),
+        'account-types': resolve(__dirname, 'account-types.html'),
+        'esg': resolve(__dirname, 'esg.html'),
+        'islamic-accounts': resolve(__dirname, 'islamic-accounts.html'),
+        'platform': resolve(__dirname, 'platform.html'),
+        '404': resolve(__dirname, '404.html'),
       },
     },
   },

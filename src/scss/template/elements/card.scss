@@ -21,6 +21,18 @@
         }
     }
 
+    &__preview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        &--image {
+            height: 133px;
+            width: auto;
+        }
+    }
+
     &--index {
         font-size: 50px;
         line-height: 120%;
@@ -58,7 +70,7 @@
         margin-bottom: 5px;
     }
 
-    &:not(&.--black, &.--blue, &.--blue-small, &.--divider) {
+    &:not(&.--black, &.--blue, &.--blue-small, &.--divider, &.--gray-light) {
         background-color: $white;
         gap: 45px;
 
@@ -92,6 +104,10 @@
             padding-top: 20px;
             max-width: 130px;
         }
+    }
+
+    &.--gray-light {
+        background-color: $bg-gray-light;
     }
 
     &.--divider {

@@ -15,6 +15,13 @@
         background-position: center bottom;
     }
 
+    &.honors-hero {
+        background-image: url('/images/hero/hero-honors-bg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+    }
+    
     @media (max-width: 1320px) {
         min-height: 530px;
 
@@ -32,6 +39,13 @@
 
         &.about-hero {
             background-image: url('/images/hero/hero-about-bg-tablet.png');
+            background-repeat: no-repeat;
+            background-size: 970px;
+            background-position: center bottom;
+        }
+
+        &.honors-hero {
+            background-image: url('/images/hero/hero-honors-bg-tablet.webp');
             background-repeat: no-repeat;
             background-size: 970px;
             background-position: center bottom;
@@ -57,6 +71,13 @@
 
         &.about-hero {
             background-image: url('/images/hero/hero-about-bg-mobile.png');
+            background-repeat: no-repeat;
+            background-size: 470px;
+            background-position: center bottom;
+        }
+
+        &.honors-hero {
+            background-image: url('/images/hero/hero-honors-bg-mobile.webp');
             background-repeat: no-repeat;
             background-size: 470px;
             background-position: center bottom;

@@ -8,6 +8,36 @@
         background-size: contain;
     }
 
+    &__bg-image-block {
+        &.--bg-1 {
+            border-radius: 30px;
+            width: 100%;
+            background-image: url('/images/info/image-bg-5.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        @media (max-width: 991px) {
+            &.--bg-1 {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            &.--bg-1 {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            &.--bg-1 {
+                height: 180px;
+            }
+        }
+    }
+
+
     @media (max-width: 1320px) {
         &__banner {
             padding-top: 110px;
