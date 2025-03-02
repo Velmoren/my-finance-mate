@@ -97,6 +97,15 @@
         }
     }
 
+    &.--seppia {
+        background-color: $white;
+        gap: 50px;
+
+        .card--icon {
+            background-color: $black !important;
+        }
+    }
+
     &.--blue-small {
         background-color: $celestial;
 
@@ -113,6 +122,10 @@
     &.--divider {
         background-color: $divider;
         min-height: 140px;
+        background-image: url('/images/banner/image-2.webp');
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
     @media (max-width: 1320px) {

@@ -54,6 +54,16 @@
             background-size: 470px; 
         }
 
+        &.--bg-5 {
+            border-radius: 30px;
+            height: 520px;
+            width: 100%;
+            background-image: url('/images/info/image-bg-13.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 520px; 
+        }
+
         @media (max-width: 1320px) {
             &.--bg-2 {
                 height: 320px;
@@ -67,11 +77,19 @@
                 height: 330px;
                 background-size: 330px;   
             }
+            &.--bg-5 {
+                height: 450px;
+                background-size: 406px;  
+            }
         }
 
         @media (max-width: 991px) {
             &.--bg-1 {
                 height: 400px;
+            }
+            &.--bg-5 {
+                height: 370px;
+                background-size: 406px;  
             }
         }
 
@@ -86,12 +104,21 @@
                 height: 330px;
                 background-size: 330px;   
             }
+            &.--bg-5 {
+                height: 330px;
+                background-size: 330px;   
+            }
         }
 
         @media (max-width: 360px) {
             &.--bg-4 {
                 height: 330px;
                 background-size: calc(100% - 40px);   
+            }
+
+            &.--bg-5 {
+                height: 260px;
+                background-size: 290px;  
             }
         }
     }
