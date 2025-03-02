@@ -12,30 +12,37 @@
         background-image: url('/images/hero/hero-about-bg.png');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center bottom;
+        background-position: center top;
     }
 
     &.honors-hero {
         background-image: url('/images/hero/hero-honors-bg.webp');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center bottom;
+        background-position: center top;
     }
 
     &.account-types-hero {
         background-image: url('/images/hero/hero-account-types-bg.webp');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center bottom;
+        background-position: center top;
     }
 
     &.esg-hero {
         background-image: url('/images/hero/hero-esg-bg.webp');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center bottom;
+        background-position: center top;
     }
 
+    &.islamic-accounts-hero {
+        background-image: url('/images/hero/hero-islamic-accounts-bg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+    
     @media (max-width: 1320px) {
         min-height: 530px;
 
@@ -74,6 +81,13 @@
 
         &.esg-hero {
             background-image: url('/images/hero/hero-esg-bg-tablet.webp');
+            background-repeat: no-repeat;
+            background-size: 970px;
+            background-position: center top;
+        }
+
+        &.islamic-accounts-hero {
+            background-image: url('/images/hero/hero-islamic-accounts-bg-tablet.webp');
             background-repeat: no-repeat;
             background-size: 970px;
             background-position: center top;
@@ -124,9 +138,34 @@
             background-size: 470px;
             background-position: center top;
         }
+
+        &.islamic-accounts-hero {
+            background-image: url('/images/hero/hero-islamic-accounts-bg-mobile.webp');
+            background-repeat: no-repeat;
+            background-size: 470px;
+            background-position: center top;
+        }
     }
 
     @media (max-width: 360px) {
-    
+        &.about-hero {
+            background-size: 370px;
+        }
+
+        &.honors-hero {
+            background-size: 370px;
+        }
+
+        &.account-types-hero {
+            background-size: 370px;
+        }
+
+        &.esg-hero {
+            background-size: 370px;
+        }
+
+        &.islamic-accounts-hero {
+            background-size: 370px;
+        }
     }
 }

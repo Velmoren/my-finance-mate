@@ -34,19 +34,98 @@
         background-size: 170px;
     }
 
+    &.--bg-2 {
+        border-radius: 20px;
+        padding: 20px 20px 180px 20px;
+        background-image: url('/images/info/image-bg-10.webp');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+    }
+
+    &.--bg-3 {
+        border-radius: 20px;
+        padding: 20px 20px 180px 20px;
+        background-image: url('/images/info/image-bg-11.webp');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+    }
+
+    &.--bg-4 {
+        border-radius: 20px;
+        padding: 20px 20px 180px 20px;
+        background-image: url('/images/info/image-bg-12.webp');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+    }
+
     @media (max-width: 1320px) {
         &.--lg {
             padding: 30px;
         }
-    
+
         &.--md {
             padding: 20px;
         }
 
         &.--bg-1 {
-            background-size: 150px;  
+            background-size: 150px;
+        }
+
+        &.--bg-2 {
+            padding: 20px 20px 120px 20px;
+        }
+
+        &.--bg-3 {
+            padding: 20px 20px 120px 20px;
+        }
+
+        &.--bg-4 {
+            padding: 20px 20px 120px 20px;
         }
     }
 
-    @media (max-width: 768px) {}
+    @media (max-width: 991px) {
+        &.--bg-2 {
+            padding: 20px 20px 270px 20px;
+        }
+
+        &.--bg-3 {
+            padding: 20px 20px 270px 20px;
+        }
+
+        &.--bg-4 {
+            padding: 20px 20px 270px 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &.--bg-2 {
+            padding: 20px 20px 170px 20px;
+        }
+
+        &.--bg-3 {
+            padding: 20px 20px 170px 20px;
+        }
+
+        &.--bg-4 {
+            padding: 20px 20px 170px 20px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        &.--bg-2 {
+            padding: 20px 20px 120px 20px;
+        }
+
+        &.--bg-3 {
+            padding: 20px 20px 120px 20px;
+        }
+
+        &.--bg-4 {
+            padding: 20px 20px 120px 20px;
+        }
+    }
 }
