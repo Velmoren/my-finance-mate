@@ -1,0 +1,49 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-item {
+        background-color: $bg-gray-light;
+        border: none;
+        border-radius: 20px !important;
+        overflow: hidden;
+    }
+
+    &-button {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            align-self: flex-start;
+        }
+
+        &:focus, &:active {
+            outline: none;
+            box-shadow: none;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        &:after {
+            align-self: flex-start;
+        }
+    }
+
+    &-body {
+        padding: 0 20px 20px 20px;
+
+        &__content {
+            border-radius: 10px;
+            background-color: transparent;
+            padding-left: 44px;
+        }
+    }
+}

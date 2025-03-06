@@ -26,6 +26,10 @@
         background-color: $white;
         text-decoration: none;
 
+        &.--bd {
+            border: 1px solid $divider;
+        }
+
         &__content {
             display: flex;
             flex-direction: column;
@@ -55,7 +59,7 @@
 
             &:hover {
                 p {
-                    color: $red
+                    color: $celestial
                 }
             }
         }

@@ -19,6 +19,11 @@ $bg-celestial-dark: #BCD7F2;
 $enable-shadows: true;
 $prefix: "mate-";
 
+$accordion-icon-width: 30px;
+
+$accordion-button-icon:         url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0C6.735 0 0 6.735 0 15C0 23.265 6.735 30 15 30C23.265 30 30 23.265 30 15C30 6.735 23.265 0 15 0ZM21 16.125H16.125V21C16.125 21.615 15.615 22.125 15 22.125C14.385 22.125 13.875 21.615 13.875 21V16.125H9C8.385 16.125 7.875 15.615 7.875 15C7.875 14.385 8.385 13.875 9 13.875H13.875V9C13.875 8.385 14.385 7.875 15 7.875C15.615 7.875 16.125 8.385 16.125 9V13.875H21C21.615 13.875 22.125 14.385 22.125 15C22.125 15.615 21.615 16.125 21 16.125Z' fill='%23254761'/%3E%3C/svg%3E%0A");
+$accordion-button-active-icon:  url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0C6.735 0 0 6.735 0 15C0 23.265 6.735 30 15 30C23.265 30 30 23.265 30 15C30 6.735 23.265 0 15 0ZM20.88 16.125H8.88C8.265 16.125 7.755 15.615 7.755 15C7.755 14.385 8.265 13.875 8.88 13.875H20.88C21.495 13.875 22.005 14.385 22.005 15C22.005 15.615 21.51 16.125 20.88 16.125Z' fill='%23254761'/%3E%3C/svg%3E%0A");
+
 $container-max-widths: (
   xxxs: 100%,
   xxs: 100%,
@@ -70,3 +75,4 @@ $gutters: (
   50px: 50px,
   60px: 60px
 );
+

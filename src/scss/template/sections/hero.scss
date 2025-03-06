@@ -50,6 +50,20 @@
         background-position: center top;
     }
     
+    &.support-center-hero {
+        background-image: url('/images/hero/hero-support-center-bg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    &.documents-hero {
+        background-image: url('/images/hero/hero-legal-document-bg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+
     @media (max-width: 1320px) {
         min-height: 530px;
 
@@ -106,6 +120,20 @@
             background-size: 970px;
             background-position: center top;
         }
+
+        &.support-center-hero {
+            background-image: url('/images/hero/hero-support-center-bg-tablet.webp');
+            background-repeat: no-repeat;
+            background-size: 970px;
+            background-position: center top;
+        }
+
+        &.documents-hero {
+            background-image: url('/images/hero/hero-legal-document-bg-tablet.webp');
+            background-repeat: no-repeat;
+            background-size: 970px;
+            background-position: center top;
+        }
     }
 
     @media (max-width: 768px) {
@@ -128,42 +156,56 @@
         &.about-hero {
             background-image: url('/images/hero/hero-about-bg-mobile.webp');
             background-repeat: no-repeat;
-            background-size: 470px;
+            background-size: cover;
             background-position: center top;
         }
 
         &.honors-hero {
             background-image: url('/images/hero/hero-honors-bg-mobile.webp');
             background-repeat: no-repeat;
-            background-size: 470px;
+            background-size: cover;
             background-position: center top;
         }
 
         &.account-types-hero {
             background-image: url('/images/hero/hero-account-types-bg-mobile.webp');
             background-repeat: no-repeat;
-            background-size: 470px;
+            background-size: cover;
             background-position: center top;
         }
 
         &.esg-hero {
             background-image: url('/images/hero/hero-esg-bg-mobile.webp');
             background-repeat: no-repeat;
-            background-size: 470px;
+            background-size: cover;
             background-position: center top;
         }
 
         &.islamic-accounts-hero {
             background-image: url('/images/hero/hero-islamic-accounts-bg-mobile.webp');
             background-repeat: no-repeat;
-            background-size: 470px;
+            background-size: cover;
             background-position: center top;
         }
 
         &.platform-hero {
             background-image: url('/images/hero/hero-platform-bg-mobile.webp');
             background-repeat: no-repeat;
-            background-size: 470px;
+            background-size: cover;
+            background-position: right top;
+        }
+
+        &.support-center-hero {
+            background-image: url('/images/hero/hero-support-center-bg-mobile.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right top;
+        }
+
+        &.documents-hero {
+            background-image: url('/images/hero/hero-legal-document-bg-mobile.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
             background-position: right top;
         }
     }
