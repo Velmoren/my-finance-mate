@@ -22,6 +22,12 @@
             left: 0;
         }
 
+        &.--black-icon {
+            &::before {
+                background-image: url('/images/icons/tick-circle-black.svg');
+            }
+        }
+   
         &.--md {
             &::before {
                 top: 0px; 

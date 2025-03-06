@@ -6,7 +6,10 @@
     padding: 20px;
     border-radius: 20px;
     background-color: $white;
-    border: 1px solid $divider;
+    
+    &.--bd {
+        border: 1px solid $divider;
+    }
 
     &.--lg {
         gap: 30px;
