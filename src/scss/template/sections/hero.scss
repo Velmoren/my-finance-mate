@@ -64,11 +64,32 @@
         background-position: center top;
     }
 
+    &.contacts-hero {
+        background-image: url('/images/hero/hero-contacts-bg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+
+        .title-hero-group {
+            padding-top: 60px;
+            padding-bottom: 110px;
+        }
+    }
+
     @media (max-width: 1320px) {
         min-height: 530px;
 
         .title-hero-group {
             padding-top: 75px;
+        }
+        
+        &.contacts-hero {
+            min-height: 250px;
+
+            .title-hero-group {
+                padding-top: 10px;
+                padding-bottom: 80px;
+            }
         }
     }
 
@@ -134,6 +155,19 @@
             background-size: 970px;
             background-position: center top;
         }
+
+        &.contacts-hero {
+            min-height: 310px;
+            background-image: url('/images/hero/hero-contacts-bg-tablet.webp');
+            background-repeat: no-repeat;
+            background-size: 970px;
+            background-position: center top;
+
+            .title-hero-group {
+                padding-top: 40px;
+                padding-bottom: 100px;
+            }
+        }
     }
 
     @media (max-width: 768px) {
@@ -142,6 +176,15 @@
 
         .title-hero-group {
             padding-top: 50px;
+        }
+
+        &.contacts-hero {
+            min-height: 290px;
+
+            .title-hero-group {
+                padding-top: 40px;
+                padding-bottom: 90px;
+            }
         }
     }
 
@@ -207,6 +250,19 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: right top;
+        }
+
+        &.contacts-hero {
+            min-height: 230px;
+            background-image: url('/images/hero/hero-contacts-bg-mobile.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right top;
+
+            .title-hero-group {
+                padding-top: 20px;
+                padding-bottom: 60px;
+            }
         }
     }
 
