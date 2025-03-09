@@ -2,6 +2,7 @@
 @import "./utils/fonts";
 @import "./utils/variables";
 @import "./utils/bootstrap";
+@import '@splidejs/splide/css';
 
 @import "./template/base";
 @import "./template/header";
@@ -39,6 +40,7 @@
 @import "./template/sections/info-list.scss";
 @import "./template/sections/questions.scss";
 @import "./template/sections/contacts.scss";
+@import "./template/sections/marquee.scss";
 @import "./template/sections/not-found-hero.scss";
 
 // PAGES

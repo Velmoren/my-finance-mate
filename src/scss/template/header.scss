@@ -59,43 +59,80 @@
         .nav-item {
             .nav-link {
                 transition: color .3s;
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 140%;
                 font-weight: 550;
                 color: $white;
-                padding: 10px 15px;
+                padding: 10px;
 
                 &.active {
-                    // color: $secondary-hovered;
+                    color: $celestial;
                 }
 
                 &:hover {
-                    // color: $secondary-hovered;
+                    color: $celestial;
+                }
+
+                &.dropdown-toggle {
+                    &::after {
+                        border-top: 8px solid;
+                        border-right: 4px solid transparent;
+                        border-left: 4px solid transparent;
+                        vertical-align: 0;
+                        margin-left: 2px;
+                    }
+
+                    &.show {
+                        color: $celestial;
+
+                        &::after {
+                            transform: rotate(180deg);
+                            border-top: 8px solid;
+                            border-right: 4px solid transparent;
+                            border-left: 4px solid transparent;
+                        }
+                    }
+                }
+
+                @media (max-width: 1320px) {
+                    font-size: 14px;
                 }
             }
 
             .dropdown-menu {
                 background-color: $white;
+                padding: 10px;
+                border-radius: 20px;
+                margin-top: 30px;
 
                 .dropdown-item {
                     font-size: 16px;
-                    line-height: 22px;
+                    line-height: 24px;
                     font-weight: 500;
-                    // color: $secondary;
+                    color: $black;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    min-height: 40px;
 
                     &.active {
-                        background-color: $white;
-                        // color: $secondary-hovered;
+                        background-color: $celestial;
+                        color: $white;
                     }
 
                     &:hover {
-                        background-color: $white;
-                        // color: $secondary-hovered;
+                        background-color: $celestial;
+                        color: $white;
                     }
 
                     &:focus-visible {
                         outline: none;
                     }
+                }
+
+                @media (max-width: 990px) {
+                    margin-top: 0;
+                    box-shadow: none;
                 }
             }
         }

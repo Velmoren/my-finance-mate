@@ -7,6 +7,7 @@
     padding: 30px;
     border-radius: 20px;
     position: relative;
+    text-decoration: none;
 
     &__content {
         display: flex;
@@ -86,6 +87,12 @@
         .card--icon {
             background-color: $white;
         }
+
+        &.--link {
+            &:hover {
+                box-shadow: 0px 40px 40px -20px #2A84FE73;
+            }
+        }
     }
 
     &.--black {
@@ -112,6 +119,12 @@
         .card__content {
             padding-top: 20px;
             max-width: 130px;
+        }
+
+        &.--link {
+            &:hover {
+                box-shadow: 0px 40px 40px -20px #2A84FE73;
+            }
         }
     }
 
