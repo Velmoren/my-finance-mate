@@ -22,24 +22,24 @@ main {
 }
 
 section, footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin: 20px;
-    border-radius: 30px;
-
-    @media (max-width: 991px) {
-        padding-top: 70px;
-        padding-bottom: 70px;
+    &:not(&.full-section) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin: 20px;
+        border-radius: 30px;
+    
+        @media (max-width: 991px) {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+    
+        @media (max-width: 768px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
-
-    @media (max-width: 768px) {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    @media (max-width: 480px) {}
 }
 
 img {
